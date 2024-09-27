@@ -1,0 +1,43 @@
+a{
+    cursor: pointer;
+}
+
+.card-container{
+    width: 90%;
+    margin-left: 5%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+
+.card{
+    height: 25rem;
+    position: relative;
+}
+.btn{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+.category-text{
+    text-align: center;
+    margin-top: 2rem;
+}
+.logo{
+    width: 20px;
+    border-radius: 50%;
+}
+@media (max-width: 767px) {
+    .card-container{
+        grid-template-columns: 1fr;
+            width: 100%;
+        margin-left: 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 1217px){
+    .card-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
