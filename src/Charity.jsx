@@ -14,8 +14,9 @@ const Charity = ({category}) => {
             const url = `https://partners.every.org/v0.2/browse/${category}?apiKey=${apiKey}&take=20&page=1`
             const response = await fetch(url)
             const data = await response.json()
+            console.log(data)
            setCharityData(data.nonprofits)
-           console.log(charityData)
+           
         }
         catch(err){
             alert("Something went wrong")
@@ -26,6 +27,7 @@ const Charity = ({category}) => {
 
     useEffect(()=>{
         getData()
+        
     },[category])
 
   return (

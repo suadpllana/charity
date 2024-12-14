@@ -25,11 +25,11 @@ const Nav = ({setCategory}) => {
         </li>
 
         <li className="nav-item">
-          <a className="nav-link text-black" onClick={() => setCategory("disabilities")}  href="#">Disabilities</a>
+          <a className="nav-link text-black" onClick={() => setCategory("disabilities")} >Disabilities</a>
         </li>
 
         <li className="nav-item">
-          <a className="nav-link text-black" onClick={() => setCategory("adoption")} aria-current="page" href="#">Adoption</a>
+          <a className="nav-link text-black" onClick={() => setCategory("adoption")} aria-current="page" >Adoption</a>
         </li>
       
 
@@ -42,11 +42,17 @@ const Nav = ({setCategory}) => {
         </li>
 
         <li className="nav-item">
-          <a className="nav-link text-black" onClick={() => setCategory("animals")} href="#">Animals</a>
+          <a className="nav-link text-black" onClick={() => setCategory("animals")} >Animals</a>
         </li>
 
         <li className="nav-item">
-          <a className="nav-link text-black" onClick={() => setCategory("oceans")} href="#">Oceans</a>
+          <a className="nav-link text-black" onClick={() => setCategory("education")} >Education</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link text-black" onClick={() => setCategory("humans")} >Humans Rights</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link text-black" onClick={() => setCategory("oceans")} >Oceans</a>
         </li>
        
      
